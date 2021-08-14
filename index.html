@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./index.css">
+    <title>needcustomwebsite.com</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204964650-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-204964650-1');
+    </script>
+</head>
+<body>
+    <header class="top"> 
+        <div class="container">
+            <h2>
+                <a href="./index.html">Home</a>
+            </h2>
+            <a class="button" href="#get-started">
+                Get Started →
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class='hero'>
+            <div class="container">
+                <div class="hero-text">
+                    <div>
+                        <h1 class="huge">
+                            You do you.
+                        </h1>
+                        <h2>
+                            We'll handle the complicated stuff.
+                        </h2>
+                        <h1>
+                            Modern, Affodable, Custom Websites
+                        </h1>
+                    </div>
+                    <a class="button" href="#get-started">
+                        Get Started →
+                    </a>
+                </div>
+
+            </div>
+            <img width="100%" src="./assets/hero2.jpg" alt="">
+        </div>
+        <div id="get-started"></div>
+        <section class="get-started">
+            <h2>Get Started</h2>
+            <div class='tiles'>
+                <div class="tile">
+                    1. Contact
+                    <br>
+                    <br>
+                    <img src="./assets/meet.svg" alt="">
+                    <br>
+                    <br>
+                    <p>Provide requirements, like number of pages, features, color branding, etc.</p>
+                </div>
+                <div class="tile">
+                    2. Receive an Estimate
+                    <br>
+                    <br>
+                    <img src="./assets/meet.svg" alt="">
+                    <br>
+                    <br>
+                    <p>Based on the requirements, our team will provide an estimate of cost and time to complete the project.</p>
+                </div>
+                <div class="tile">
+                    3. Design & Review
+                    <br>
+                    <br>
+                    <img src="./assets/meet.svg" alt="">
+                    <br>
+                    <br>
+                    <p>You will have a chance to review the design and request reworks before the site goes live.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <div id="contact"></div>
+        <section>
+            <h2>Contact</h2>
+            <div class='tiles'>
+                <a class="tile" href="">Instagram</a>
+                <a class="tile" href="">Twitter</a>
+                <a class="tile" href="">Email</a>
+            </div>
+        </section>
+        <footer>
+            <div class="tiles">
+                <a class="tile" href="./index.html">Home</a>
+                <a class="tile" href="./index.html#contact">Contact</a>
+                <a class="tile" href="./writing.html">Writing</a>
+                <a class="tile" href="./illustration.html">Illustration</a>
+                <a class="tile" href="./music.html">Music</a>
+            </div>
+        </footer>
+    </main>
+</body>
+<script>
+    // Header transition
+    var main = document.querySelector('main');
+    var header = document.querySelector('header');
+    main.addEventListener('scroll', function (e) {
+        if (main.scrollTop === 0 ) {
+            header.classList.remove('scrolled');
+        } else if (main.scrollTop !== 0 && !header.classList.contains('scrolled')) header.classList.add('scrolled');
+    });
+</script>
+</html>
