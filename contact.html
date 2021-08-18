@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./index.css">
+    <title>needcustomwebsite.com</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-204964650-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-204964650-1');
+    </script>
+</head>
+
+<body>
+    <header class="alternate">
+        <div class="container">
+            <h2>
+                <a href="./index.html">Home</a>
+            </h2>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <form action="">
+                <input type="text" name="name" id="" placeholder="Name or Company">
+                <br>
+                <input type="text" name="name" id="" placeholder="Email Address">
+                <br>
+                <textarea placeholder="Additional info" name="" id="" cols="30" rows="10"></textarea>
+                <br>
+                <button id="send" class="button alternate" >Send</button>
+            </form>
+            <script>
+                (function() {
+                    var button = document.querySelector("#send");
+                    button.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        alert('Our email is currently down. Please call us at 408-507-5633.');
+                        console.log(e)
+                    });
+                }());
+            </script>
+        </section>
+        <footer>
+            <div class="tiles">
+                <a class="tile" href="./index.html">Home</a>
+                <a class="tile" href="./contact.html">Contact</a>
+            </div>
+        </footer>
+    </main>
+</body>
+<script>
+    // Header transition
+    var main = document.querySelector('html');
+    var header = document.querySelector('header');
+    window.addEventListener('scroll', function (e) {
+        if (main.scrollTop === 0) {
+            header.classList.remove('scrolled');
+        } else if (main.scrollTop !== 0 && !header.classList.contains('scrolled')) header.classList.add('scrolled');
+    });
+</script>
+
+</html>

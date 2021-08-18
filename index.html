@@ -47,6 +47,7 @@
                     <a class="button" href="#get-started">
                         Get Started →
                     </a>
+                    <a class="button" href="./contact.html">Contact Now</a>
                 </div>
 
             </div>
@@ -64,6 +65,9 @@
                     <br>
                     <br>
                     <p>Provide requirements, like number of pages, features, color branding, etc.</p>
+                    <br>
+                    <a class="button alternate" href="./contact.html">Contact Now</a>
+
                 </div>
                 <div class="tile">
                     2. Receive an Estimate
@@ -88,29 +92,35 @@
         <hr>
         <div id="contact"></div>
         <section>
-            <h2>Contact</h2>
+            <h2>Our Work</h2>
             <div class='tiles'>
-                <a class="tile" href="">Instagram</a>
-                <a class="tile" href="">Twitter</a>
-                <a class="tile" href="">Email</a>
+                <a class="tile" href="https://blog-md.com">
+                    blog-md.com
+                    <br>
+                    <br>
+                    <img src="./assets/blog-md.png" alt="website preview">
+                </a>
+                <a class="tile" href="https://ctlcreates.com">
+                    ctlcreates.com
+                    <br/>
+                    <br/>
+                    <img src="https://ctlcreates.com/assets/preview.png" alt="website preview">
+                </a>
             </div>
         </section>
         <footer>
             <div class="tiles">
                 <a class="tile" href="./index.html">Home</a>
-                <a class="tile" href="./index.html#contact">Contact</a>
-                <a class="tile" href="./writing.html">Writing</a>
-                <a class="tile" href="./illustration.html">Illustration</a>
-                <a class="tile" href="./music.html">Music</a>
+                <a class="tile" href="./contact.html">Contact</a>
             </div>
         </footer>
     </main>
 </body>
 <script>
     // Header transition
-    var main = document.querySelector('main');
+    var main = document.documentElement;
     var header = document.querySelector('header');
-    main.addEventListener('scroll', function (e) {
+    window.addEventListener('scroll', function (e) {
         if (main.scrollTop === 0 ) {
             header.classList.remove('scrolled');
         } else if (main.scrollTop !== 0 && !header.classList.contains('scrolled')) header.classList.add('scrolled');
